@@ -1,0 +1,29 @@
+ h1 {
+    color: rgb(177, 67, 67);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+ }
+
+body {
+    background-color: oklch(83.576% 0.01686 17.187);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px;
+    }   
+
+table {
+    text-align: center;
+    }
+
+h2 {
+    color: teal;
+    text-align: center;
+    }   
+
+h3 {
+    color: rgb(67, 67, 177);
+    }   
+
+thead {
+    color: teal;
+    text-align: center;
+    }
