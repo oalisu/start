@@ -2,6 +2,8 @@
     color: rgb(177, 67, 67);
     font-family: 'Arial', sans-serif;
     text-align: center;
+    letter-spacing: 6px;
+    text-decoration: rgb(177, 67, 67) underline;
  }
 
 body {
