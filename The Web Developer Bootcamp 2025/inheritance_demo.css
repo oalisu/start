@@ -1,0 +1,21 @@
+body {
+    color: green;
+}
+
+section {
+    color: blue;
+}
+
+form {
+    color: red;
+}
+
+/* button {
+    color: purple;
+} */
+
+button {
+    color: inherit;
+}
+
+/* inherit makes the button to be red as its the most specific element that has been giving a color and as the button is nested inside it, it will inheritate its giving color*/

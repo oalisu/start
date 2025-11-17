@@ -1,0 +1,51 @@
+div {
+width: 1500px;
+height: 200px;
+}
+
+/*the fisrt two divs will have borders made using individual commands */
+
+#one {
+    background-color: #a2d2ff;
+    border-width: 5px;
+    border-left-width: 10px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+#two {
+    background-color: #bde0fe;
+    border-width: 8px;
+    border-style: dashed;
+    border-color: grey;
+    border-radius: 8%;
+}
+
+/* while the last two will be using the comand "border" to set everything about it in one go*/
+
+#three {
+    background-color: #ffafcc;
+    border: 12px dotted #ff4d6d;
+}
+
+#four {
+    background-color: #cdb4db;
+    border: 15px double #6a4c93;
+    /*the one bellow was done using a border radius generator on mdn */
+    border-radius: 27px 84px 84px 84px / 0px 70px 70px 70px;
+    padding: 20px;
+}
+
+/*  PADDING: 10px 
+    applies to all for sides
+    PADDING: 10px 10px
+    applies first vertical then horizontal
+    PADDING: 10px 10px 10px
+    applies top | horizontal | bottom
+    PADDING: 10px 10px 10px 10px
+    applies top | right | bottom | left */
+    
+
+button {
+ padding: 10px 15px 20px 25px; 
+}
