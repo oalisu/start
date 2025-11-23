@@ -215,7 +215,7 @@ body {
 
 .pricing-button:hover,
 .pricing-button:focus {
-    background-color: #b6ddff
+    background-color: #b6ddff;
 }
 
 .pricing-button.is-featured {
@@ -228,7 +228,7 @@ body {
     background-color: #269eff;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1020px){
     .panel {
         flex-direction: row;
         justify-content: space-between;
@@ -244,3 +244,4 @@ body {
     .pricing:last-child {
         border-right: none;
     }
+}
