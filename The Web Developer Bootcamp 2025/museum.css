@@ -1,7 +1,58 @@
 body {
-    background-color: pink;
+    background-color: #f6c8c0;
+    font-family: "Nunito", sans-serif;
+}
+.content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.brand {
+    color: #EA1C2C;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.links {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+.links:hover {
+    color: #EA1C2C;
 }
 
 h2 {
+    font-weight: 200;
+    font-size: 4rem;
+}
+
+#bar {
+    color: #EA1C2C;
+}
+
+h3 {
     text-transform: uppercase;
+    color: #EA1C2C;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.pic {
+    width: 100%;
+}
+
+p {
+   color: #f498b8;
+   font-size: 1.4rem;
+   line-height: 2;
+   font-weight: 300;
+   max-height: 1700px;
+}
+
+@media (max-width: 1200px) {
+    h2 {
+        font-weight: 200;
+        font-size: 3.2rem;
+    }
 }
