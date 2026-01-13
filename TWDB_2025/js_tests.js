@@ -72,3 +72,38 @@ const startsWithA = ["apple", "banana", "avocado", "cherry"].filter(fruit => fru
 
 const allEvens = arr => arr.every(num => num % 2 === 0);
 
+
+// spread in function calls
+
+const nums = [4, 7, 1, -3, 9];
+const maxNum = Math.max(...nums); 
+const minNum = Math.min(...nums);
+const combined = [...[1, 2, 3], ...[4, 5, 6]];
+
+// spread to combine arrays 
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6]; 
+const combinedArr = [...arr1, ...arr2];
+// spread to copy arrays
+const original = ['a', 'b', 'c'];
+const copy = [...original];
+// spread to combine objects
+const obj1 = { x: 1, y: 2 };
+const obj2 = { z: 3, w: 4 };
+const combinedObj = { ...obj1, ...obj2 };
+// spread to copy objects
+const originalObj = { a: 10, b: 20 };
+const copyObj = { ...originalObj };
+
+// rest parameters 
+const sum = (...nums) => {
+  return nums.reduce((total, curr) => total + curr);
+};
+
+const greet = (greeting, ...names) => {
+  return names.map(name => `${greeting}, ${name}!`);
+};                
+
+// destructuring arrays
+const scores = [95, 82, 88, 76, 100];
+const [topScore, secondScore, ...restScores] = scores;
