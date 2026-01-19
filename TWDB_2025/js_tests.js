@@ -84,13 +84,16 @@ const combined = [...[1, 2, 3], ...[4, 5, 6]];
 const arr1 = [1, 2, 3];
 const arr2 = [4, 5, 6]; 
 const combinedArr = [...arr1, ...arr2];
+
 // spread to copy arrays
 const original = ['a', 'b', 'c'];
 const copy = [...original];
+
 // spread to combine objects
 const obj1 = { x: 1, y: 2 };
 const obj2 = { z: 3, w: 4 };
 const combinedObj = { ...obj1, ...obj2 };
+
 // spread to copy objects
 const originalObj = { a: 10, b: 20 };
 const copyObj = { ...originalObj };
@@ -107,3 +110,66 @@ const greet = (greeting, ...names) => {
 // destructuring arrays
 const scores = [95, 82, 88, 76, 100];
 const [topScore, secondScore, ...restScores] = scores;
+
+// getelementbyid
+const titleElement = document.getElementById("title");
+titleElement.style.color = "blue"; 
+titleElement.textContent = "Updated Title";
+
+// getelementsbyclassname 
+const items = document.getElementsByClassName("item");
+for (let item of items) {
+  item.style.fontWeight = "bold"; 
+}
+
+// getelementsbytagname
+const paragraphs = document.getElementsByTagName("p"); 
+for (let p of paragraphs) {
+  p.style.fontSize = "18px"; 
+} 
+
+// queryselector
+const mainHeader = document.querySelector("h1"); 
+mainHeader.style.textDecoration = "underline";    
+const firstItem = document.querySelector(".item"); 
+firstItem.style.backgroundColor = "lightgray";  
+
+// queryselectorall
+const allItems = document.querySelectorAll(".item");
+allItems.forEach(item => {
+  item.style.padding = "10px";
+});
+const evenItems = document.querySelectorAll(".item:nth-child(even)");
+evenItems.forEach(item => {
+  item.style.backgroundColor = "#f0f0f0";
+}); 
+
+ // innerhtml vs textcontent
+const container = document.getElementById("container");
+container.innerHTML = "<h2>This is a heading</h2><p>This is a paragraph.</p>"; 
+container.textContent += " This text is added using textContent.";  
+container.innerHTML += "<p>This paragraph is added using innerHTML.</p>";   
+container.textContent += "<p>This will not be rendered as HTML.</p>";
+
+// creating and appending elements
+const newDiv = document.createElement("div");
+newDiv.textContent = "This is a new div element.";
+newDiv.style.border = "1px solid black";
+newDiv.style.padding = "10px";
+document.body.appendChild(newDiv);    
+const newListItem = document.createElement("li");
+newListItem.textContent = "New Item";
+const list = document.getElementById("myList");
+list.appendChild(newListItem);    
+
+// removing elements
+const removeButton = document.getElementById("removeButton");
+removeButton.addEventListener("click", () => {
+  const itemToRemove = document.getElementById("itemToRemove");   
+  if (itemToRemove) {
+    itemToRemove.remove(); 
+  } 
+});
+
+
+
